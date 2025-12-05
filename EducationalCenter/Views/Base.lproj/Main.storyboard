@@ -225,10 +225,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x0c-MH-iOT">
-                                <rect key="frame" x="122" y="307" width="148" height="85"/>
+                                <rect key="frame" x="76" y="271" width="240" height="85"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Crear un nuevo registro"/>
                                 <connections>
                                     <segue destination="LSx-90-9Tc" kind="show" id="mG0-38-XFI"/>
                                 </connections>
@@ -250,10 +250,37 @@
                     <view key="view" contentMode="scaleToFill" id="Rzk-t1-kSC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YSb-Uz-UA3">
+                                <rect key="frame" x="0.0" y="172" width="393" height="1000"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RLI-ce-4jS">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="1000"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="RLI-ce-4jS" firstAttribute="width" secondItem="bbV-BH-Ov6" secondAttribute="width" id="Fhl-Zf-4IY"/>
+                                    <constraint firstItem="RLI-ce-4jS" firstAttribute="leading" secondItem="zlF-wH-Nd0" secondAttribute="leading" id="M4U-we-sfW"/>
+                                    <constraint firstItem="RLI-ce-4jS" firstAttribute="top" secondItem="zlF-wH-Nd0" secondAttribute="top" id="OFA-Lv-99W"/>
+                                    <constraint firstItem="RLI-ce-4jS" firstAttribute="trailing" secondItem="zlF-wH-Nd0" secondAttribute="trailing" id="c8h-gR-CVh"/>
+                                    <constraint firstItem="RLI-ce-4jS" firstAttribute="bottom" secondItem="zlF-wH-Nd0" secondAttribute="bottom" id="ose-8g-is3"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="zlF-wH-Nd0"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="bbV-BH-Ov6"/>
+                            </scrollView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="O9Y-gF-qXo"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YSb-Uz-UA3" firstAttribute="leading" secondItem="O9Y-gF-qXo" secondAttribute="leading" id="8OP-Bg-Ts6"/>
+                            <constraint firstItem="YSb-Uz-UA3" firstAttribute="top" secondItem="O9Y-gF-qXo" secondAttribute="top" id="SS1-hw-rSA"/>
+                            <constraint firstItem="O9Y-gF-qXo" firstAttribute="bottom" secondItem="YSb-Uz-UA3" secondAttribute="bottom" id="X0p-T4-yWG"/>
+                            <constraint firstItem="O9Y-gF-qXo" firstAttribute="trailing" secondItem="YSb-Uz-UA3" secondAttribute="trailing" id="tOY-l2-D3M"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Registro de empleados" id="Xwb-7u-ISz"/>
+                    <size key="freeformSize" width="393" height="852"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0gW-VI-8sb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
